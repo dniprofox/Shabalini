@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>Shabalini</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <div class="content">
@@ -15,7 +25,7 @@
             <div class="header__logo">
               <picture>
                 <source media="(min-width:780px)" srcset="images/logo.png">
-                <img src="images/mobile_logo.png" alt="shabalini">
+                <img src="images/logo.svg" alt="shabalini">
               </picture>
             </div>
             <div class="menu">
@@ -27,11 +37,10 @@
               <div class="menu__lang">
                 <a href="home-ua.html">Укр</a>
               </div>
-              <div class="mobile-menu__lang">              
-                  <a href="home-ua.html">Укр
-                    <img src="images/arrow-r.svg" alt="icon">
-                  </a>                 
-               
+              <div class="mobile-menu__lang">
+                <a href="home-ua.html">Укр
+                  <img src="images/arrow-r.svg" alt="icon">
+                </a>
               </div>
             </div>
           </div>
@@ -61,10 +70,12 @@
           </div>
         </div>
       </section>
-      <section id="services" class="services">
+      <section class="services">
         <div class="container">
           <div class="services__inner">
-            <h2>Какие услуги мы предлагаем?</h2>
+            <div id="services" class="services__title">
+              <h2>Какие услуги мы предлагаем?</h2>
+            </div>
             <div class="services__items">
               <div class="services__item">
                 <div class="services__item-title">Проектирование дизайна и<br> юзабилити сайта</div>
@@ -142,7 +153,7 @@
         <div class="container">
           <div class="develop__inner">
             <div class="develop__title">
-              <h2>Процесс разработки дизайна сайта</h2>
+              <h2>Процесс разработки<br> дизайна сайта</h2>
             </div>
             <div class="develop__items">
               <div class="develop__item">
@@ -179,32 +190,45 @@
           </div>
         </div>
       </section>
-      <div id="consult" class="contacts">
+      <div class="contacts">
         <div class="container">
-          <h2>Консультируем и принимаем заявки по бесплатному телефону либо на почте</h2>
+          <div id="consult" class="contacts__title">
+            <h2>Консультируем и принимаем заявки по бесплатному телефону либо на почте</h2>
+          </div>
           <div class="contacts__content">
-            <div class="contacts__content-item">
-              <span class="contacts__icon">
-                <picture>
-                  <source media="(min-width:440px)" srcset="images/phone.svg">
-                  <img src="images/phone_mob.svg" alt="phone">
-                </picture>
-              </span>
-              <div class="contacts__content-box">
-                <span class="contacts__name">Телефон</span>
-                <a class="contacts__link" href="tel:+380508745654">+38 050 874 56 54</a>
+            <div class="contacts__col">
+              <div class="contacts__content-item">
+                <span class="contacts__icon">
+                  <picture>
+                    <source media="(min-width:440px)" srcset="images/icons/phone.svg">
+                    <img src="images/icons/phone_mob.svg" alt="phone">
+                  </picture>
+                </span>
+                <div class="contacts__content-box">
+                  <span class="contacts__name">Телефон</span>
+                  <a class="contacts__link" href="tel:+380508745654">+38 050 874 56 54</a>
+                </div>
+              </div>
+              <div class="contacts__content-item">
+                <span class="contacts__icon">
+                  <picture>
+                    <source media="(min-width:440px)" srcset="images/icons/email.svg">
+                    <img src="images/icons/email_mob.svg" alt="phone">
+                  </picture>
+                </span>
+                <div class="contacts__content-box">
+                  <span class="contacts__name">Почтовый адрес</span>
+                  <a class="contacts__link" href="mailto:example@gmail.com">example@gmail.com</a>
+                </div>
               </div>
             </div>
-            <div class="contacts__content-item">
-              <span class="contacts__icon">
-                <picture>
-                  <source media="(min-width:440px)" srcset="images/email.svg">
-                  <img src="images/email_mob.svg" alt="phone">
-                </picture>
-              </span>
-              <div class="contacts__content-box">
-                <span class="contacts__name">Почтовый адрес</span>
-                <a class="contacts__link" href="mailto:example@gmail.com">example@gmail.com</a>
+            <div class="contacts__col">
+              <div class="contacts__info-box">
+                <span class="contacts__name">График работы: без выходных</span><br>
+                <span class="contacts__info">09.00 - 18.00 Пн-Вс</span>
+              </div>
+              <div class="contacts__order">
+                <a data-fancybox data-src="#modal__form" href="javascript:;">Заказать консультацию</a>
               </div>
             </div>
           </div>
@@ -213,7 +237,9 @@
       <section class="benefits">
         <div class="container">
           <div class="benefits__inner">
-            <h2>Почему мы?</h2>
+            <div class="benefits__title">
+              <h2>Почему мы?</h2>
+            </div>
             <div class="benefits__items">
               <div class="benefits__item">
                 <div class="benefits__item-title">Прозрачные условия</div>
@@ -243,29 +269,89 @@
     </div>
     <footer id="contacts" class="footer">
       <div class="container">
+        <div class="footer__title">
+          <h2>Контакты</h2>
+        </div>
         <div class="footer__inner">
-          <div class="footer__logo">
-            <picture>
-              <source media="(min-width:670px)" srcset="images/footer_logo.png">
-              <img src="images/mobile_logo.png" alt="shabalini">
-            </picture>
-          </div>
-          <div class="footer__content">
-            <div class="footer__info">
-              <span>г.Днепр, </span>
-              <span>ул. Автотранспортная 2</span>
-              <span>пн-пт с 9.00 до 18.00</span>
-            </div>
-            <div class="footer__phone">
-              <a href="tel:+380508745654"><span>+38 050 874 56 54</span></a>
-              <a href="tel:+380508745654"><span>+38 050 874 56 54</span></a>
-              <a href="tel:+380508745654"><span>+38 050 874 56 54</span></a>
-            </div>
-          </div>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__list-link" href="tel:+380509905904">
+                <picture>
+                  <source media="(min-width:440px)" srcset="images/icons/phone.svg">
+                  <img src="images/icons/phone_mob.svg" alt="phone">
+                </picture>
+                <span class="list__name">Телефон</span><br>
+                <span class="list__info">(050) 990-59-04</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__list-link" href="tg://resolve?domain=@sofinoua">
+                <picture>
+                  <source media="(min-width:440px)" srcset="images/icons/telegram.svg">
+                  <img src="images/icons/telegram_mob.svg" alt="phone">
+                </picture>
+                <span class="list__name">Telegram</span><br>
+                <span class="list__info">@sofinoua</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__list-link" href="viber://chat?number=+380675550422">
+                <picture>
+                  <source media="(min-width:440px)" srcset="images/icons/viber.svg">
+                  <img src="images/icons/viber_mob.svg" alt="phone">
+                </picture>
+                <span class="list__name">Viber</span><br>
+                <span class="list__info">+380675550422</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li>
+              <div class="footer__logo">
+                <picture>
+                  <source media="(min-width:780px)" srcset="images/logo.png">
+                  <img src="images/logo.svg" alt="shabalini">
+                </picture>
+              </div>
+            </li>
+            <li>
+              <span class="list__name">Адрес:</span><br>
+              <span class="list__info">г.Днепр, </span>
+              <span class="list__info">ул. Автотранспортная 2</span>
+            </li>
+            <li>
+              <span class="list__name">График работы: без выходных</span><br>
+              <span class="list__info">09.00 - 18.00 Пн-Вс</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script src="js/main.min.js"></script>
+  </div>
+  <div class="footer__maps">
+    <img src="images/map.png" alt="map">
+  </div>
+  </footer>
+  <!-- modal -->
+  <div id="modal__form">
+    <div class="form__wrapper">
+      <div class="form__title">Бесплатная консультация</div>
+      <form action="#">
+        <label class="form__label-name" for="text">
+          <input type="text" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label class="form__label-phone" for="phone">
+          <input type="password" placeholder="Номер для связи с Вами">
+        </label>
+        <label class="form__label-message" for="message">
+          <textarea name="message" cols="20" rows="5" placeholder="Возможно, есть пожелания к консультации?"></textarea>
+        </label>
+        <button class="form__btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <!-- ******** -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
