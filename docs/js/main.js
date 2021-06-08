@@ -3,7 +3,7 @@ $(function () {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top-20}, 1200);    
+    $('body,html').animate({scrollTop: top}, 1200);    
     });
     $(".mobile-menu__nav,.services__btn").on("click","a", function (event) {
         event.preventDefault();
@@ -12,6 +12,6 @@ $(function () {
         $('body,html').animate({scrollTop: top-100}, 1200);    
         });
     
-    
+        
 
 })

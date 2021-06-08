@@ -12,6 +12,7 @@
   <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -226,7 +227,7 @@
                 <span class="contacts__info">09.00 - 18.00 Пн-Вс</span>
               </div>
               <div class="contacts__order">
-                <a href="">Замовити консультацію</a>
+                <a data-fancybox data-src="#modal__form" href="javascript:;">Замовити консультацію</a>
               </div>
             </div>
           </div>
@@ -251,8 +252,8 @@
                 <span><img src="images/personal.png" alt="img"></span>
               </div>
               <div class="benefits__item">
-                <div class="benefits__item-title">Полная конфиденциальность</div>
-                <p class="benefits__item-text">Не показываем и не обговариваем проекты и кейсы наших клиентов.</p>
+                <div class="benefits__item-title">Повна Конфіденційність</div>
+                <p class="benefits__item-text">Не показуємо і не обговорюємо проекти і кейси наших клієнтів.</p>
                 <span><img src="images/security.png" alt="img"></span>
               </div>
               <div class="benefits__item">
@@ -340,7 +341,7 @@
         <label class="form__label-message" for="message">
           <textarea name="message" placeholder="Можливо, є побажання до консультації?"></textarea>
         </label>
-        <button class="form__btn" type="submit">Отправить</button>
+        <button class="form__btn" type="submit">Відправити</button>
       </form>
     </div>
   </div>
