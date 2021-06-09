@@ -337,20 +337,21 @@
       <div class="form__title">Бесплатная консультация</div>
       <form action="#">
         <label class="form__label-name" for="text">
-          <input type="text" placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="user_name" placeholder="Представьтесь, пожалуйста*" required>
         </label>
         <label class="form__label-phone" for="phone">
-          <input type="password" placeholder="Номер для связи с Вами">
+          <input id='user_phone' type="text" name="user_phone" placeholder="Номер для связи с Вами*" required>
         </label>
         <label class="form__label-message" for="message">
-          <textarea name="message" cols="20" rows="5" placeholder="Возможно, есть пожелания к консультации?"></textarea>
+          <textarea name="message" name="user_text" placeholder="Возможно, есть пожелания к консультации?"></textarea>
         </label>
         <button class="form__btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
   <!-- ******** -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.14/dist/jquery-input-mask-phone-number.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

@@ -10,8 +10,11 @@ $(function () {
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-100}, 1200);    
-        });
+    });
+        //(xxx) xxx-xxxx format code
+        $('#user_phone').usPhoneFormat({
+            format: '(xxx) xxx-xxxx',
+        });   
     
-        
 
 })
