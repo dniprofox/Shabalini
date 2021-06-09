@@ -333,13 +333,13 @@
       <div class="form__title">Безкоштовна консультація</div>
       <form action="#">
         <label class="form__label-name" for="text">
-          <input type="text" placeholder="Представтесь, будь ласка">
+          <input type="text" name="user_name" placeholder="Представтесь, будь ласка*" required>
         </label>
         <label class="form__label-phone" for="phone">
-          <input type="password" placeholder="Номер для зв’язку з Вами">
+          <input type="text" name="user_phone" placeholder="Номер для зв’язку з Вами*" required>
         </label>
         <label class="form__label-message" for="message">
-          <textarea name="message" placeholder="Можливо, є побажання до консультації?"></textarea>
+          <textarea name="message" name="user_text" placeholder="Можливо, є побажання до консультації?"></textarea>
         </label>
         <button class="form__btn" type="submit">Відправити</button>
       </form>
