@@ -16,12 +16,12 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>  
-  <div class="wrapper">     
+<body>
+  <div class="wrapper container__fluid ">
     <div class="content">
       <div id="toTop">
-        <span><img src="images/icons/arrow_top.png" alt="top"></span>      
-      </div>  
+        <span><img src="images/icons/arrow_top.png" alt="top"></span>
+      </div>
       <header class="header">
         <div class="container">
           <div class="header__inner">
@@ -330,30 +330,38 @@
         </div>
       </div>
   </div>
-  <div class="footer__maps">
-    <img src="images/map.png" alt="map">
+  <div class="footer__maps container__fluid">
+    
+      <img src="images/map.png" alt="map">
+      
   </div>
   </footer>
   <!-- modal -->
   <div id="modal__form">
     <div class="form__wrapper">
       <div class="form__title">Бесплатная консультация</div>
-      <form action="mail.php" method="POST">
-        <label class="form__label-name" for="text">
-          <input type="text" name="user_name" placeholder="Представьтесь, пожалуйста*" required>
-        </label>
-        <label class="form__label-phone" for="phone">
-          <input id='user_phone' type="text" name="user_phone" placeholder="Номер для связи с Вами*" required>
-        </label>
-        <label class="form__label-message" for="message">
-          <textarea name="message" name="user_text" placeholder="Возможно, есть пожелания к консультации?"></textarea>
-        </label>
+      <form class="form__consult" >
+        <input name="user_name" type="text"  placeholder="Представьтесь, пожалуйста*" required>
+        <input name="user_phone" placeholder="Номер для связи с Вами*" required>
+        <textarea name="user_text" placeholder="Возможно, есть пожелания к консультации?" required></textarea>
         <button class="form__btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
+  <!-- modal-mini -->
+  <div class="overlay">
+    <div class="modal modal__mini" id="thanks">
+      <div class="modal__close">&times;</div>
+      <div class="modal__subtitle">Спасибо за Bашу заявку!</div>
+      <div class="modal__descr">Наш менеджер свяжется с вами
+        в ближайшее время!</div>
+    </div>
+  </div>
+
   <!-- ******** -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
