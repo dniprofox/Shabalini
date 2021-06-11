@@ -14,7 +14,7 @@ $(function () {
     });
     
 
-    /* Кнопка вверх */
+     // ToTop////
    $(window).on('scroll',function () {
       
     if ($(this).scrollTop() != 0)
@@ -22,7 +22,7 @@ $(function () {
     else
        $('#toTop').fadeOut("slow");
    });
-    // ToTop////
+   
     $('#toTop').on('click',function () {
         $('body,html').animate({
         scrollTop: 0
